@@ -1,0 +1,63 @@
+.financeContainer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #e9ecef;
+    width: 100%;
+}
+
+.financeTicker {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 0 15px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.financeItem {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.currencyName {
+    font-weight: bold;
+    margin-right: 5px;
+    color: #495057;
+}
+
+.currencyValue {
+    margin-right: 5px;
+    color: #212529;
+}
+
+.currencyChange {
+    font-weight: bold;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.loading {
+    text-align: center;
+    padding: 10px;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    .financeTicker {
+        overflow-x: scroll;
+        justify-content: flex-start;
+    }
+
+    .financeItem {
+        padding: 0 10px;
+    }
+}

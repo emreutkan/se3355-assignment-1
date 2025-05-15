@@ -4,11 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="" />
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="initialize React app with essential files and configurations">
+      <change afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Finance.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GecmisModal.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/GecmisModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainSlider.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StickyAds.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/StickyAds.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TopMenu.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TopMenu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherData.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/WeatherData.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MainPage.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/MainPage.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,20 +66,29 @@
     <option name="sortByType" value="true" />
     <option name="sortKey" value="BY_TYPE" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "C:/Users/emre/WebstormProjects/se3355-assignment-1/src/pages",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "C:\\Users\\emre\\WebstormProjects\\se3355-assignment-1\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\src\pages" />
+      <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\src\components" />
+    </key>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -65,10 +105,24 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
+      <workItem from="1747318057442" duration="2428000" />
     </task>
+    <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
+      <option name="closed" value="true" />
+      <created>1747318586645</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1747318586645</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="initialize React app with essential files and configurations" />
+    <option name="LAST_COMMIT_MESSAGE" value="initialize React app with essential files and configurations" />
   </component>
 </project>
