@@ -4,6 +4,7 @@ import TopMenu from '../components/TopMenu';
 import Finance from '../components/Finance';
 import MainSlider from '../components/MainSlider';
 import WeatherData from '../components/WeatherData';
+import RandomNews from '../components/RandomNews';
 import GecmisModal from '../components/GecmisModal';
 import styles from './MainPage.module.css';
 
@@ -20,6 +21,7 @@ const MainPage: React.FC = () => {
                         <MainSlider />
                     </div>
                     <div className={styles.contentSidebar}>
+                        <RandomNews />
                         <WeatherData />
                     </div>
                 </div>

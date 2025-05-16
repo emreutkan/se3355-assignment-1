@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="refactor: remove description field from NewsItem interface to streamline data structure">
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="refactor: simplify MainSlider component structure and enhance CSS for improved functionality">
+      <change afterPath="$PROJECT_DIR$/src/components/RandomNews.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/RandomNews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/StickyAds.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StickyAds.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +92,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="12715000" />
+      <workItem from="1747318057442" duration="16914000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -147,7 +150,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747387261384</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="refactor: simplify MainSlider component structure and enhance CSS for improved functionality">
+      <option name="closed" value="true" />
+      <created>1747392745207</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1747392745207</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +172,7 @@
     <MESSAGE value="update styles and enhance functionality for finance ticker and main slider with new animations and controls" />
     <MESSAGE value="refactor: update news handling in GecmisModal and MainSlider components with improved link handling and Redux integration" />
     <MESSAGE value="refactor: remove description field from NewsItem interface to streamline data structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: remove description field from NewsItem interface to streamline data structure" />
+    <MESSAGE value="refactor: simplify MainSlider component structure and enhance CSS for improved functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: simplify MainSlider component structure and enhance CSS for improved functionality" />
   </component>
 </project>

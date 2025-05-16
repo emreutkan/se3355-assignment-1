@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './WeatherData.module.css';
 import { WeatherDay, api } from '../services/api';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationArrow, faEllipsisH, faTemperatureHigh } from '@fortawesome/free-solid-svg-icons';
+import { faLocationArrow, faEllipsisH, faTemperatureHigh, faSun, faCloudSun, faCloud, faCloudRain, faCloudBolt } from '@fortawesome/free-solid-svg-icons';
 
 const WeatherData: React.FC = () => {
     const [weatherData, setWeatherData] = useState<WeatherDay[]>([]);
@@ -41,6 +41,23 @@ const WeatherData: React.FC = () => {
         return dayAbbreviations[dayIndex];
     };
 
+    const getWeatherIcon = (iconName: string) => {
+        switch (iconName) {
+            case 'sun':
+                return faSun;
+            case 'cloud-sun':
+                return faCloudSun;
+            case 'cloud':
+                return faCloud;
+            case 'cloud-rain':
+                return faCloudRain;
+            case 'cloud-bolt':
+                return faCloudBolt;
+            default:
+                return faSun;
+        }
+    };
+
     return (
         <div className={styles.weatherContainer}>
             {loading ? (
@@ -63,10 +80,10 @@ const WeatherData: React.FC = () => {
                             <span className={styles.temperatureUnit}>°C</span>
                         </div>
                         {weatherData.length > 0 && (
-                            <img
-                                src={weatherData[0].icon}
-                                alt={weatherData[0].condition}
+                            <FontAwesomeIcon
+                                icon={getWeatherIcon(weatherData[0].icon)}
                                 className={styles.weatherIcon}
+                                color="#ffdd00"
                             />
                         )}
                     </div>
@@ -82,7 +99,17 @@ const WeatherData: React.FC = () => {
                         {weatherData.map((day, index) => (
                             <div key={index} className={styles.weatherDay}>
                                 <div className={styles.dayName}>{getDayName(day.date)}</div>
-                                <img src={day.icon} alt={day.condition} className={styles.dayIcon} />
+                                <FontAwesomeIcon
+                                    icon={getWeatherIcon(day.icon)}
+                                    className={styles.dayIcon}
+                                    color={
+                                        day.icon === 'sun' ? '#ffdd00' :
+                                            day.icon === 'cloud-sun' ? '#f8d568' :
+                                                day.icon === 'cloud' ? '#b4bfce' :
+                                                    day.icon === 'cloud-rain' ? '#6698cb' :
+                                                        day.icon === 'cloud-bolt' ? '#7b6cd9' : '#ffdd00'
+                                    }
+                                />
                                 <div className={styles.dayTemp}>
                                     <span className={styles.dayTempHigh}>{day.temp_high}°</span>
                                     <span className={styles.dayTempLow}>{day.temp_low}°</span>
