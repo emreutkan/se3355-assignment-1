@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+# News Portal Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This is a React-based news portal application developed as part of the SE3355 assignment. The portal mimics a modern Turkish news website with various components including a news slider, financial data ticker, weather forecast, and advertisement sections.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Top Navigation Menu**: Categories with dropdown submenus
+- **Financial Data Ticker**: Real-time currency exchange rates with visual indicators
+- **Main News Slider**: Carousel displaying featured news articles with images
+- **Weather Widget**: 5-day weather forecast with visual representations
+- **Advertisement Panels**: Product advertisements with closable panels
+- **History Tracking**: Records and displays previously viewed news articles
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies Used
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- React 18
+- TypeScript
+- Redux for state management
+- CSS Modules for styling
+- FontAwesome icons
+- React Router for navigation
 
-### `npm test`
+## Project Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+se3355-assignment-1/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Finance.tsx           # Currency ticker component
+│   │   ├── GecmisModal.tsx       # History modal for visited news
+│   │   ├── MainSlider.tsx        # News carousel component
+│   │   ├── RandomNews.tsx        # Secondary news component
+│   │   ├── StickyAds.tsx         # Advertisement components
+│   │   ├── TopMenu.tsx           # Navigation menu
+│   │   └── WeatherData.tsx       # Weather forecast component
+│   ├── pages/
+│   │   └── MainPage.tsx          # Main layout component
+│   ├── redux/
+│   │   ├── actionTypes.ts        # Redux action type definitions
+│   │   ├── actions.ts            # Redux action creators
+│   │   ├── reducers.ts           # Redux reducers
+│   │   └── store.ts              # Redux store configuration
+│   ├── services/
+│   │   └── api.ts                # API service for data fetching
+│   ├── App.tsx                   # Root component
+│   └── index.tsx                 # Entry point
+├── ads/                          # Advertisement images
+├── package.json
+└── tsconfig.json
+```
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
+   ```
+   git clone https://github.com/emreutkan/se3355-assignment-1.git
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navigate to the project directory:
+   ```
+   cd se3355-assignment-1
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies:
+   ```
+   npm install
+   ```
 
-### `npm run eject`
+4. Start the development server:
+   ```
+   npm start
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+The application will be available at `http://localhost:3000`.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- Browse news categories using the top navigation menu
+- View financial data in the ticker at the top
+- Navigate through featured news using the slider controls
+- Check weather forecast for the next 5 days
+- Browse product advertisements on both sides
+- Access your viewed news history by clicking on "GEÇMİŞ" in the top menu
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Component Details
 
-## Learn More
+### TopMenu
+Navigation menu with categories and dropdown submenus. Includes a "GEÇMİŞ" (History) option to view previously visited news.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Finance
+Displays currency exchange rates with auto-scrolling ticker effect. Shows value and percentage changes with color indicators for positive/negative movement.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### MainSlider
+Auto-rotating carousel showing featured news with images and titles. Includes navigation arrows and dot indicators. Records visited news in Redux store.
+
+### WeatherData
+Shows current temperature and 5-day weather forecast with appropriate icons. Displays high and low temperatures for each day.
+
+### StickyAds
+Displays product advertisements on both sides of the content. Shows product images and prices. Ads can be closed individually.
+
+### GecmisModal
+Modal popup showing previously visited news articles. Stores up to 10 most recent visited news items using Redux.
+
+## State Management
+
+Redux is used for state management, primarily for:
+- Tracking visited news articles
+- Controlling the visibility of the history modal
+
