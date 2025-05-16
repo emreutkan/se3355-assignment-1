@@ -19,6 +19,7 @@
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .mainMenu li {
@@ -33,6 +34,7 @@
     font-weight: bold;
     font-size: 14px;
     transition: all 0.3s ease;
+    text-transform: uppercase;
 }
 
 .mainMenu li:hover > a,

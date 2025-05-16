@@ -3,7 +3,7 @@
 }
 
 .mainContent {
-    /*max-width: 1200px;*/
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -15,7 +15,8 @@
 }
 
 .contentMain {
-    flex: 1;
+    flex: 0 0 calc(100% - 370px);
+    max-width: calc(100% - 370px);
 }
 
 .contentSidebar {
