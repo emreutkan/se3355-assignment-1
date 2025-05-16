@@ -3,7 +3,6 @@ import { ADD_VISITED_NEWS, SET_GECMIS_VISIBLE } from './actionTypes';
 interface NewsItem {
     id: number;
     title: string;
-    description: string;
     imageUrl: string;
     link: string;
 }
