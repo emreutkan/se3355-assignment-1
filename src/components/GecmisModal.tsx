@@ -1,6 +1,5 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 import { setGecmisVisible } from '../redux/actions';
 import { RootState } from '../redux/reducers';
 import styles from './GecmisModal.module.css';
@@ -39,7 +38,7 @@ const GecmisModal: React.FC = () => {
                         <ul className={styles.visitedNewsList}>
                             {visitedNews.map((news: NewsItem) => (
                                 <li key={news.id}>
-                                    <Link to={news.link} onClick={handleClose}>
+                                    <a href={news.link} target="_blank" rel="noopener noreferrer" onClick={handleClose}>
                                         <div className={styles.visitedNewsItem}>
                                             <img src={news.imageUrl} alt={news.title} />
                                             <div className={styles.visitedNewsInfo}>
@@ -47,7 +46,7 @@ const GecmisModal: React.FC = () => {
                                                 <p>{news.description}</p>
                                             </div>
                                         </div>
-                                    </Link>
+                                    </a>
                                 </li>
                             ))}
                         </ul>

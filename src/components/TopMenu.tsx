@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setGecmisVisible } from '../redux/actions';
+import { RootState } from '../redux/reducers';
 import styles from './TopMenu.module.css';
 
 interface MenuItem {
@@ -14,6 +15,7 @@ interface MenuItem {
 const TopMenu: React.FC = () => {
     const [activeMenu, setActiveMenu] = useState<string | null>(null);
     const dispatch = useDispatch();
+    const { visitedNews } = useSelector((state: RootState) => state.news);
 
     const menuItems: MenuItem[] = [
         { name: 'SON DAKİKA', link: '/son-dakika', subMenu: [
@@ -73,6 +75,18 @@ const TopMenu: React.FC = () => {
                                     {item.subMenu.map((subItem, subIndex) => (
                                         <li key={subIndex}>
                                             <Link to={subItem.link}>{subItem.name}</Link>
+                                        </li>
+                                    ))}
+                                </ul>
+                            )}
+
+                            {item.name === 'GEÇMİŞ' && activeMenu === item.name && visitedNews.length > 0 && (
+                                <ul className={styles.subMenu}>
+                                    {visitedNews.slice(0, 10).map((news, newsIndex) => (
+                                        <li key={newsIndex}>
+                                            <a href={news.link} target="_blank" rel="noopener noreferrer">
+                                                {news.title}
+                                            </a>
                                         </li>
                                     ))}
                                 </ul>
