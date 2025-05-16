@@ -2,15 +2,12 @@ import React, { useEffect, useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './MainSlider.module.css';
 import {api, NewsItem} from "../services/api";
-import { useDispatch } from 'react-redux';
-import { addVisitedNews } from '../redux/actions';
 
 const MainSlider: React.FC = () => {
     const [news, setNews] = useState<NewsItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [currentSlide, setCurrentSlide] = useState(0);
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
-    const dispatch = useDispatch();
 
     const startAutoSlide = () => {
         if (intervalRef.current) {
@@ -26,7 +23,6 @@ const MainSlider: React.FC = () => {
         const fetchNews = async () => {
             try {
                 const data = await api.getNews();
-                console.log("DEBUG - Fetched news data:", data);
                 setNews(data);
                 setLoading(false);
             } catch (error) {
@@ -73,35 +69,20 @@ const MainSlider: React.FC = () => {
 
     return (
         <div className={styles.sliderContainer}>
-            {news.map((item, index) => {
-                console.log("DEBUG - Rendering news item:", item);
-                return (
-                    <div
-                        key={item.id}
-                        className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
-                    >
-                        <a
-                            href={item.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            onClick={() => {
-                                console.log("DEBUG - Clicked news item:", item);
-                                dispatch(addVisitedNews({
-                                    id: item.id,
-                                    title: item.title,
-                                    imageUrl: item.imageUrl,
-                                    link: item.link
-                                }));
-                            }}
-                        >
-                            <img src={item.imageUrl} alt={item.title} className={styles.slideImage} />
-                            <div className={styles.slideContent}>
-                                <h2 className={styles.slideTitle}>{item.title}</h2>
-                            </div>
-                        </a>
+            {news.map((item, index) => (
+                <a
+                    key={item.id}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
+                >
+                    <img src={item.imageUrl} alt={item.title} className={styles.slideImage} />
+                    <div className={styles.slideContent}>
+                        <h2 className={styles.slideTitle}>{item.title}</h2>
                     </div>
-                );
-            })}
+                </a>
+            ))}
 
             <div className={styles.sliderControls}>
                 <button className={`${styles.sliderArrow} ${styles.arrowLeft}`} onClick={handlePrevSlide}>{'<'}</button>
