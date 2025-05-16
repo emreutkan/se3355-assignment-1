@@ -11,18 +11,27 @@ import styles from './MainPage.module.css';
 const MainPage: React.FC = () => {
     return (
         <div className={styles.mainPage}>
-            <StickyAds />
             <TopMenu />
             <Finance />
 
             <div className={styles.mainContent}>
                 <div className={styles.contentLayout}>
-                    <div className={styles.contentMain}>
-                        <MainSlider />
+                    <div className={styles.contentLeft}>
+                        <div className={styles.leftAdsContainer}>
+                            <StickyAds position="left" />
+                        </div>
+                        <div className={styles.contentMain}>
+                            <MainSlider />
+                        </div>
                     </div>
-                    <div className={styles.contentSidebar}>
-                        <RandomNews />
-                        <WeatherData />
+                    <div className={styles.contentRight}>
+                        <div className={styles.contentSidebar}>
+                            <RandomNews />
+                            <WeatherData />
+                        </div>
+                        <div className={styles.rightAdsContainer}>
+                            <StickyAds position="right" />
+                        </div>
                     </div>
                 </div>
             </div>

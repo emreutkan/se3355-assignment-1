@@ -1,8 +1,7 @@
 .financeContainer {
     background-color: #f8f9fa;
-    padding: 10px 0;
+    padding: 10px;
     border-bottom: 1px solid #e9ecef;
-    width: 100%;
     overflow: hidden;
 }
 
@@ -10,8 +9,11 @@
     width: 100%;
     overflow: hidden;
     position: relative;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
+    align-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .financeTicker {

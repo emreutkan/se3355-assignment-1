@@ -3,32 +3,45 @@
 }
 
 .mainContent {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
+    align-items: center;
+    display: flex;
+    min-width: 1400px;
+    justify-content: center;
 }
 
 .contentLayout {
     display: flex;
+    min-width: 1400px;
+
     margin-top: 20px;
-    gap: 20px;
+    /*gap: 20px;*/
+}
+
+.contentLeft {
+    display: flex;
+    flex: 0 0 calc(100% - 370px);
+    max-width: calc(100% - 370px);
+    gap: 10px;
+}
+
+.contentRight {
+    display: flex;
+    gap: 10px;
 }
 
 .contentMain {
-    flex: 0 0 calc(100% - 370px);
-    max-width: calc(100% - 370px);
+    flex: 1;
 }
 
 .contentSidebar {
-    width: 350px;
+    flex: 1;
 }
 
-@media (max-width: 992px) {
-    .contentLayout {
-        flex-direction: column;
-    }
-
-    .contentSidebar {
-        width: 100%;
-    }
+.leftAdsContainer {
+    width: 160px;
 }
+
+.rightAdsContainer {
+    width: 160px;
+}
+

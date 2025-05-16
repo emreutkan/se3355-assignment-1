@@ -1,7 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styles from './StickyAds.module.css';
 
-const StickyAds: React.FC = () => {
+interface StickyAdsProps {
+    position?: 'left' | 'right';
+}
+
+const StickyAds: React.FC<StickyAdsProps> = ({ position }) => {
     const [showLeftAd, setShowLeftAd] = useState(true);
     const [showRightAd, setShowRightAd] = useState(true);
     const [adPrices, setAdPrices] = useState<number[]>([]);
@@ -34,6 +38,52 @@ const StickyAds: React.FC = () => {
         window.open(adLinks[index], '_blank');
     };
 
+    // If position is specified, render inline ads
+    if (position) {
+        if (position === 'left') {
+            return (
+                <div className={styles.inlineAdsContainer}>
+                    <div className={styles.adContent}>
+                        <div className={styles.adItemsContainer}>
+                            {[1, 2, 3].map((num, index) => (
+                                <div key={num} className={styles.adItem} onClick={() => handleAdClick(index)}>
+                                    <img
+                                        src={require(`../../ads/ad${num}.jpg`)}
+                                        alt={`Advertisement ${num}`}
+                                    />
+                                    <div className={styles.adPrice}>
+                                        {adPrices[index]} TL
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            );
+        } else {
+            return (
+                <div className={styles.inlineAdsContainer}>
+                    <div className={styles.adContent}>
+                        <div className={styles.adItemsContainer}>
+                            {[4, 5, 6].map((num, index) => (
+                                <div key={num} className={styles.adItem} onClick={() => handleAdClick(index + 3)}>
+                                    <img
+                                        src={require(`../../ads/ad${num}.jpg`)}
+                                        alt={`Advertisement ${num}`}
+                                    />
+                                    <div className={styles.adPrice}>
+                                        {adPrices[index + 3]} TL
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+            );
+        }
+    }
+
+    // Otherwise render sticky ads (original implementation)
     return (
         <div className={styles.stickyAdsContainer}>
             {showLeftAd && (
