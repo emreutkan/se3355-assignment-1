@@ -1,5 +1,9 @@
 # News Portal Project
 
+## Deployed at
+
+https://jolly-bay-017f26503.6.azurestaticapps.net/
+
 ## Overview
 
 This is a React-based news portal application developed as part of the SE3355 assignment. The portal mimics a modern Turkish news website with various components including a news slider, financial data ticker, weather forecast, and advertisement sections.
