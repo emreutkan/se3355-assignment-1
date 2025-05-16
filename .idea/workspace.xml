@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.ts" afterDir="false" />
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: update API base URL for production deployment and adjust CI settings in workflow">
+      <change beforePath="$PROJECT_DIR$/src/components/StickyAds.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StickyAds.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +108,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="23683000" />
+      <workItem from="1747318057442" duration="23970000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -215,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747408848381</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: update API base URL for production deployment and adjust CI settings in workflow">
+      <option name="closed" value="true" />
+      <created>1747409751971</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1747409751971</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,6 +241,7 @@
     <MESSAGE value="feat: enhance StickyAds component with dynamic ad pricing and improved layout" />
     <MESSAGE value="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements" />
     <MESSAGE value="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements" />
+    <MESSAGE value="feat: update API base URL for production deployment and adjust CI settings in workflow" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update API base URL for production deployment and adjust CI settings in workflow" />
   </component>
 </project>
