@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements">
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Finance.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StickyAds.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StickyAds.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/StickyAds.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StickyAds.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Finance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/RandomNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RandomNews.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMenu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +64,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
     "ts.external.directory.path": "C:\\Users\\emre\\WebstormProjects\\se3355-assignment-1\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -79,6 +80,23 @@
       <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\ads" />
       <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\src" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.build" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -96,7 +114,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="21863000" />
+      <workItem from="1747318057442" duration="22772000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -186,7 +204,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747406952028</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements">
+      <option name="closed" value="true" />
+      <created>1747407892495</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1747407892495</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,6 +230,7 @@
     <MESSAGE value="feat: add RandomNews component to display a random news item alongside weather data" />
     <MESSAGE value="feat: enhance StickyAds component with dynamic ad pricing and improved layout" />
     <MESSAGE value="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements" />
+    <MESSAGE value="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements" />
   </component>
 </project>

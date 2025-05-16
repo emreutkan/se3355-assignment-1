@@ -28,7 +28,7 @@ const Finance: React.FC = () => {
             ) : (
                 <div className={styles.tickerWrapper}>
                     <div className={styles.financeTicker}>
-                        {[...currencies, ...currencies].map((currency, index) => (
+                        {[...currencies, ...currencies, ...currencies].map((currency, index) => (
                             <div key={index} className={styles.financeItem}>
                                 <span className={styles.currencyName}>{currency.name}</span>
                                 <span className={styles.currencyValue}>{currency.value.toFixed(2)}</span>

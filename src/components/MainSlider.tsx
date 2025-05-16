@@ -1,13 +1,15 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
 import styles from './MainSlider.module.css';
 import {api, NewsItem} from "../services/api";
+import { useDispatch } from 'react-redux';
+import { addVisitedNews } from '../redux/actions';
 
 const MainSlider: React.FC = () => {
     const [news, setNews] = useState<NewsItem[]>([]);
     const [loading, setLoading] = useState<boolean>(true);
     const [currentSlide, setCurrentSlide] = useState(0);
     const intervalRef = useRef<NodeJS.Timeout | null>(null);
+    const dispatch = useDispatch();
 
     const startAutoSlide = () => {
         if (intervalRef.current) {
@@ -63,6 +65,10 @@ const MainSlider: React.FC = () => {
         startAutoSlide();
     };
 
+    const handleNewsClick = (newsItem: NewsItem) => {
+        dispatch(addVisitedNews(newsItem));
+    };
+
     if (loading) {
         return <div className={styles.loading}>Loading news...</div>;
     }
@@ -76,6 +82,7 @@ const MainSlider: React.FC = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                     className={`${styles.slide} ${index === currentSlide ? styles.active : ''}`}
+                    onClick={() => handleNewsClick(item)}
                 >
                     <img src={item.imageUrl} alt={item.title} className={styles.slideImage} />
                     <div className={styles.slideContent}>

@@ -60,6 +60,11 @@
     list-style: none;
 }
 
+.mainMenu li:last-child .subMenu {
+    right: 0;
+    left: auto;
+}
+
 .subMenu li a {
     padding: 8px 15px;
     font-weight: normal;

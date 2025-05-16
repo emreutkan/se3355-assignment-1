@@ -20,7 +20,7 @@
     display: flex;
     flex-wrap: nowrap;
     white-space: nowrap;
-    animation: ticker 20s linear infinite;
+    animation: ticker 30s linear infinite;
     will-change: transform;
     width: fit-content;
     -webkit-overflow-scrolling: touch;
@@ -32,7 +32,7 @@
         transform: translateX(0);
     }
     100% {
-        transform: translateX(-50%);
+        transform: translateX(-33.33%);
     }
 }
 

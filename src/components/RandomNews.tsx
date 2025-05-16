@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import styles from './RandomNews.module.css';
 import { NewsItem, api } from '../services/api';
+import { useDispatch } from 'react-redux';
+import { addVisitedNews } from '../redux/actions';
 
 const RandomNews: React.FC = () => {
     const [news, setNews] = useState<NewsItem | null>(null);
     const [loading, setLoading] = useState<boolean>(true);
+    const dispatch = useDispatch();
 
     useEffect(() => {
         const fetchRandomNews = async () => {
@@ -25,6 +28,12 @@ const RandomNews: React.FC = () => {
         fetchRandomNews();
     }, []);
 
+    const handleNewsClick = () => {
+        if (news) {
+            dispatch(addVisitedNews(news));
+        }
+    };
+
     if (loading) {
         return <div className={styles.loading}>Yükleniyor...</div>;
     }
@@ -40,7 +49,12 @@ const RandomNews: React.FC = () => {
                     <img src={news.imageUrl} alt={news.title} />
                 </div>
                 <div className={styles.newsTitle}>
-                    <a href={news.link} target="_blank" rel="noopener noreferrer">
+                    <a
+                        href={news.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        onClick={handleNewsClick}
+                    >
                         {news.title}
                     </a>
                 </div>
