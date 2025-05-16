@@ -4,29 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="initialize React app with essential files and configurations">
-      <change afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Finance.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GecmisModal.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/GecmisModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainSlider.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StickyAds.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/StickyAds.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopMenu.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/TopMenu.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherData.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/WeatherData.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/MainPage.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actionTypes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/store.ts" afterDir="false" />
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="add Redux and React Router integration with initial components and styles">
+      <change afterPath="$PROJECT_DIR$/src/services/api.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Finance.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Finance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +75,9 @@
       <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\src\pages" />
       <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\src\components" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emre\WebstormProjects\se3355-assignment-1\src" />
+    </key>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -105,7 +95,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="2428000" />
+      <workItem from="1747318057442" duration="4054000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -115,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747318586645</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add Redux and React Router integration with initial components and styles">
+      <option name="closed" value="true" />
+      <created>1747324657872</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1747324657872</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -123,6 +121,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initialize React app with essential files and configurations" />
-    <option name="LAST_COMMIT_MESSAGE" value="initialize React app with essential files and configurations" />
+    <MESSAGE value="add Redux and React Router integration with initial components and styles" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Redux and React Router integration with initial components and styles" />
   </component>
 </project>
