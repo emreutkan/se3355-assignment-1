@@ -8,7 +8,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /*gap: 20px;*/
 }
 
 .menuContainer {
@@ -24,7 +23,7 @@
     padding: 0;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 25px;
+    gap: 50px;
 }
 
 .mainMenu li {

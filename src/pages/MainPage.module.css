@@ -12,9 +12,9 @@
 .contentLayout {
     display: flex;
     min-width: 1400px;
-
+    justify-content: center;
     margin-top: 20px;
-    /*gap: 20px;*/
+    gap: 20px;
 }
 
 .contentLeft {
@@ -44,4 +44,3 @@
 .rightAdsContainer {
     width: 160px;
 }
-

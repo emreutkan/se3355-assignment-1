@@ -9,6 +9,7 @@ const StickyAds: React.FC<StickyAdsProps> = ({ position }) => {
     const [showLeftAd, setShowLeftAd] = useState(true);
     const [showRightAd, setShowRightAd] = useState(true);
     const [adPrices, setAdPrices] = useState<number[]>([]);
+    const [showAd, setShowAd] = useState(true);
 
     const adLinks = [
         "https://www.lacoste.com.tr/urun/erkek-siyah-ayakkabi-742sma0048t-012/",
@@ -38,11 +39,18 @@ const StickyAds: React.FC<StickyAdsProps> = ({ position }) => {
         window.open(adLinks[index], '_blank');
     };
 
+    const handleAdClose = () => {
+        setShowAd(false);
+    };
+
     // If position is specified, render inline ads
     if (position) {
-        if (position === 'left') {
+        if (position === 'left' && showAd) {
             return (
                 <div className={styles.inlineAdsContainer}>
+                    <div className={styles.adCloseButton} onClick={handleAdClose}>
+                        &times;
+                    </div>
                     <div className={styles.adContent}>
                         <div className={styles.adItemsContainer}>
                             {[1, 2, 3].map((num, index) => (
@@ -60,9 +68,12 @@ const StickyAds: React.FC<StickyAdsProps> = ({ position }) => {
                     </div>
                 </div>
             );
-        } else {
+        } else if (position === 'right' && showAd) {
             return (
                 <div className={styles.inlineAdsContainer}>
+                    <div className={styles.adCloseButton} onClick={handleAdClose}>
+                        &times;
+                    </div>
                     <div className={styles.adContent}>
                         <div className={styles.adItemsContainer}>
                             {[4, 5, 6].map((num, index) => (
@@ -80,6 +91,8 @@ const StickyAds: React.FC<StickyAdsProps> = ({ position }) => {
                     </div>
                 </div>
             );
+        } else {
+            return null;
         }
     }
 

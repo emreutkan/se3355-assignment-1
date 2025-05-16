@@ -4,16 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: enhance StickyAds component with dynamic ad pricing and improved layout">
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Finance.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainSlider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RandomNews.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RandomNews.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StickyAds.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StickyAds.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/StickyAds.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/StickyAds.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/TopMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMenu.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +96,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="20938000" />
+      <workItem from="1747318057442" duration="21863000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -180,7 +178,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747405230521</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements">
+      <option name="closed" value="true" />
+      <created>1747406952028</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1747406952028</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -197,6 +203,7 @@
     <MESSAGE value="refactor: simplify MainSlider component structure and enhance CSS for improved functionality" />
     <MESSAGE value="feat: add RandomNews component to display a random news item alongside weather data" />
     <MESSAGE value="feat: enhance StickyAds component with dynamic ad pricing and improved layout" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: enhance StickyAds component with dynamic ad pricing and improved layout" />
+    <MESSAGE value="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update layout and styling for MainPage and StickyAds components with responsive design improvements" />
   </component>
 </project>
