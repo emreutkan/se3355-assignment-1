@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="add API service for fetching finance, weather, and news data with updated components and styles">
+    <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="update styles and enhance functionality for weather and finance components with new icons and auto-slide feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Finance.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Finance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/MainSlider.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMenu.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/WeatherData.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/WeatherData.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/MainPage.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/MainPage.module.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +90,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="7086000" />
+      <workItem from="1747318057442" duration="7673000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -122,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747358013093</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update styles and enhance functionality for weather and finance components with new icons and auto-slide feature">
+      <option name="closed" value="true" />
+      <created>1747361712106</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1747361712106</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -132,6 +134,7 @@
     <MESSAGE value="initialize React app with essential files and configurations" />
     <MESSAGE value="add Redux and React Router integration with initial components and styles" />
     <MESSAGE value="add API service for fetching finance, weather, and news data with updated components and styles" />
-    <option name="LAST_COMMIT_MESSAGE" value="add API service for fetching finance, weather, and news data with updated components and styles" />
+    <MESSAGE value="update styles and enhance functionality for weather and finance components with new icons and auto-slide feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="update styles and enhance functionality for weather and finance components with new icons and auto-slide feature" />
   </component>
 </project>
