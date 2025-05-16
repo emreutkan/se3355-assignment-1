@@ -6,12 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c6ddb77b-ddf2-4d30-9622-937311c3768b" name="Changes" comment="feat: update layout and styling for Finance, MainPage, MainSlider, StickyAds, and TopMenu components with responsive design improvements">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Finance.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Finance.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Finance.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/MainSlider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/MainSlider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/RandomNews.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/RandomNews.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TopMenu.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TopMenu.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/api.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +109,7 @@
       <updated>1747314422080</updated>
       <workItem from="1747314423848" duration="749000" />
       <workItem from="1747317473948" duration="24000" />
-      <workItem from="1747318057442" duration="22772000" />
+      <workItem from="1747318057442" duration="23683000" />
     </task>
     <task id="LOCAL-00001" summary="initialize React app with essential files and configurations">
       <option name="closed" value="true" />
@@ -212,7 +207,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747407892495</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: update layout and styling for Finance, MainSlider, and TopMenu components with responsive design improvements and enhanced news tracking">
+      <option name="closed" value="true" />
+      <created>1747408848381</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1747408848381</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

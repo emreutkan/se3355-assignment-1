@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000/api';
+// const BASE_URL = 'http://localhost:5000/api';
+const BASE_URL = 'https://se3355a1b-dpd2gycrcegubjaz.polandcentral-01.azurewebsites.net/api'; // Replace with your production URL
 
 export interface Currency {
     id: number;
